@@ -13,8 +13,8 @@ Unless required by applicable law or agreed to in writing, software distributed 
 valuea = 0
 y = 0
 x = 0
-input1 = 0.2
-input2 = 72
+input1 = 0.3
+input2 = 50
 
 --Declaring color variables
 red = Color.new(31, 0, 0)
@@ -32,8 +32,8 @@ while not Keys.held.Start do
 	--Calculating each values and adapting them to the screen size
 	--valuea = valuea + input1
 	--x = valuea * 20
-	x = x + input1
 	y = math.floor(input2*math.sin(x)+96)
+	x = x + input1
 	
 	--Drawing blue horizontal and vertical lines
 	screen.drawFillRect(SCREEN_UP, x, 0, x + 1, 192, blue)
